@@ -1,0 +1,20 @@
+.card-body {
+    text-align: center;
+    margin: 10px;
+}
+
+.card {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #0000001a;
+    background-color: #f0f0f0;
+}
+
+.card:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 20px #0000001a;
+}
+button {
+    margin-top: 10px;
+}
