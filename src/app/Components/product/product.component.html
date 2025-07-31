@@ -1,21 +1,7 @@
 <div class="container">
-
 <div class="row">
-<!-- <div class="col-3"> -->
-    <!-- <div class=" col-3 card" style="width: 15rem;" *ngFor="let product of products">
-        <img [src]="product.imgUrl" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{product.name}}</h5>
-            <p class="card-text bg-white text-black"> <span style="font-weight: bold; color: red; font-size: 17px;">Price:</span>  {{product.price}}</p>
-            <a  class="btn btn-primary" routerLink="/details/{{product.id}}">Show details</a>
-        </div>
-    </div> -->
         <div class=" col-3 card" style="width: 15rem;" *ngFor="let product of products">
             <app-product-item [product]="product" (add)="handleAddToCart($event)"></app-product-item>
         </div>
-
-<!-- </div> -->
-    
-    
 </div>
-</div> <!-- end of container -->
+</div> 

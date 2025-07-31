@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { iproduct } from '../Components/product/iproduct';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -13,11 +12,9 @@ export class ProductDetailsService {
     { id: 5, name: "Art", price: 10000, imgUrl: "/4.jpg" },
     { id: 6, name: "image", price: 10000, imgUrl: "/9.jpg" },
   ];
-
   getAllProducts(): iproduct[] {
     return this.products;
   }
-
   getProductbyId(id: number): iproduct | undefined {
     return this.products.find(product => product.id === id);
   }
