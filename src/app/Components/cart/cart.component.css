@@ -1,3 +1,9 @@
+*{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
 img{
     width: 100px;
     height: 100px;
